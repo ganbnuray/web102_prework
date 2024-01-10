@@ -19,7 +19,7 @@ The following **required** functionality is completed:
 
 Here's a walkthrough of implemented features:
 
-<img src='https://imgur.com/a/TG516IY' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+![Video Walkthrough](https://imgur.com/a/TG516IY)
 
 GIF created with [CloudConvert](https://cloudconvert.com/webm-to-gif)
 
