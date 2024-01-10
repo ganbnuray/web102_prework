@@ -19,9 +19,8 @@ The following **required** functionality is completed:
 
 Here's a walkthrough of implemented features:
 
+The gif's size was too big to display on this file, so I am including a link.
 [Video Walkthrough](https://imgur.com/a/TG516IY)
-
-
 
 GIF created with [CloudConvert](https://cloudconvert.com/webm-to-gif)
 
