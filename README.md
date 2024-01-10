@@ -21,6 +21,10 @@ Here's a walkthrough of implemented features:
 
 [Video Walkthrough](https://imgur.com/a/TG516IY)
 
+<video width="320" height="240" controls>
+  <source src="https://imgur.com/a/TG516IY" type="gif">
+</video>
+
 GIF created with [CloudConvert](https://cloudconvert.com/webm-to-gif)
 
 ## Notes
