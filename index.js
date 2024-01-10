@@ -132,16 +132,39 @@ allBtn.addEventListener("click", showAllGames);
  * Challenge 6: Add more information at the top of the page about the company.
  * Skills used: template literals, ternary operator
  */
-
 // grab the description container
 const descriptionContainer = document.getElementById("description-container");
 
+let funded_games = GAMES_JSON.filter((game) => {
+  return game["pledged"] >= game["goal"];
+});
+let count_funded = funded_games.length;
+const total_funded = GAMES_JSON.reduce((sum, game) => {
+  return sum + game["pledged"];
+}, 0);
 // use filter or reduce to count the number of unfunded games
 
+console.log(count_funded, total_funded);
+let displayStr = "";
 // create a string that explains the number of unfunded games using the ternary operator
-
+if (GAMES_JSON.length - count_funded > 1) {
+  displayStr = `A total of ${total_funded} has been raised for ${
+    GAMES_JSON.length
+  } games. Currently, ${
+    GAMES_JSON.length - count_funded
+  } games remain unfunded.`;
+} else {
+  displayStr = `A total of ${total_funded} has been raised for ${
+    GAMES_JSON.length
+  } games. Currently, ${
+    GAMES_JSON.length - count_funded
+  } game remains unfunded.`;
+}
+console.log(displayStr);
 // create a new DOM element containing the template string and append it to the description container
-
+let new_info = document.createElement("p");
+new_info.innerText = displayStr;
+descriptionContainer.append(new_info);
 /************************************************************************************
  * Challenge 7: Select & display the top 2 games
  * Skills used: spread operator, destructuring, template literals, sort
@@ -155,7 +178,13 @@ const sortedGames = GAMES_JSON.sort((item1, item2) => {
 });
 
 // use destructuring and the spread operator to grab the first and second games
-
+let [game1, game2, ...rest] = sortedGames;
+console.log(game1, game2);
 // create a new element to hold the name of the top pledge game, then append it to the correct element
-
+let first_game = document.createElement("p");
+first_game.innerText = game1["name"];
+firstGameContainer.appendChild(first_game);
 // do the same for the runner up item
+let second_game = document.createElement("p");
+second_game.innerText = game2["name"];
+secondGameContainer.appendChild(second_game);
