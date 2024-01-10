@@ -21,7 +21,7 @@ Here's a walkthrough of implemented features:
 
 [Video Walkthrough](https://imgur.com/a/TG516IY)
 
-<blockquote class="imgur-embed-pub" lang="en" data-id="a/TG516IY"  ><a href="//imgur.com/a/TG516IY">Sea Monster Crowdfunding</a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+
 
 GIF created with [CloudConvert](https://cloudconvert.com/webm-to-gif)
 
